@@ -32,16 +32,9 @@
       "fullscreen": true,
       "allowNewWindows": false,
       "allowBackButton": false,
-      "allowedDomains": ["lowcosttinaytoner.com"]
-    },
-
-    "applications": [
-      {
-        "packageName": "uk.nktnet.webviewkiosk",
-        "installType": "FORCE_INSTALLED",
-        "defaultPermissionPolicy": "GRANT",
-        "appUrl": "file:///mnt/data/WebviewKiosk_v0.24.32.apk"
-      }
-    ]
+      "allowedDomains": [
+        "lowcosttinaytoner.com"
+      ]
+    }
   }
 }
