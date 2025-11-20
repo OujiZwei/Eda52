@@ -1,40 +1,10 @@
 {
-  "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.afwsamples.testdpc/.DeviceAdminReceiver",
-  "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME": "com.afwsamples.testdpc",
   "android.app.extra.PROVISIONING_MODE": "DEVICE_OWNER",
-  "android.app.extra.PROVISIONING_LEAVE_ALL_SYSTEM_APPS_ENABLED": false,
-
-  "policy": {
-    "defaultPermissionPolicy": "GRANT",
-
-    "statusBarDisabled": true,
-    "keyguardDisabled": true,
-    "maximumTimeToLock": 0,
-    "stayOnWhilePluggedIn": 3,
-
-    "kioskCustomLauncherEnabled": true,
-
-    "lockTaskPackages": [
-      "com.afwsamples.testdpc",
-      "uk.nktnet.webviewkiosk"
-    ],
-
-    "persistentPreferredActivities": [
-      {
-        "actions": ["android.intent.action.MAIN"],
-        "categories": ["android.intent.category.HOME"],
-        "receiverActivity": "com.afwsamples.testdpc/.LauncherActivity"
-      }
-    ],
-
-    "managedConfiguration": {
-      "kioskUrl": "https://www.lowcosttinaytoner.com/panel",
-      "fullscreen": true,
-      "allowNewWindows": false,
-      "allowBackButton": false,
-      "allowedDomains": [
-        "lowcosttinaytoner.com"
-      ]
-    }
+  "android.app.extra.PROVISIONING_LEAVE_ALL_SYSTEM_APPS_ENABLED": true,
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver",
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://dl.google.com/android/management/AndroidManagement.apk",
+  "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_CHECKSUM": "vW8v1n3tWH8hGckDjRqx8pX2HF5NCz7L+G2kZZgwySU=",
+  "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+    "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "AQUI_TU_TOKEN"
   }
 }
